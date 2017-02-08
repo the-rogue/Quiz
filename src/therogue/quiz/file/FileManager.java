@@ -19,6 +19,6 @@ public class FileManager
 		URL location = FileManager.class.getProtectionDomain().getCodeSource().getLocation();
 		String path = location.getPath();
 		path = path.replaceAll("%20", " ");
-		return new File(path).getParent();
+		return new File(path).getParent() + "/";
 	}
 }

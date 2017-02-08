@@ -4,10 +4,6 @@
  */
 package therogue.quiz;
 
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.net.URL;
-import java.net.URLClassLoader;
 
 /**
  * @author The Rogue
@@ -25,6 +21,7 @@ public class Start
 	 * @throws IllegalArgumentException 
 	 * @throws IllegalAccessException 
 	 */
+	/*
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void main(String[] args) 
 	{
@@ -43,5 +40,5 @@ public class Start
 		}
 
 	}
-	
+	*/
 }

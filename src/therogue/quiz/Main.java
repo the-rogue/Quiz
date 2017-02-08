@@ -4,7 +4,9 @@
  */
 package therogue.quiz;
 
-import therogue.quiz.file.ConfigManager;
+import therogue.quiz.config.ConfigManager;
+import therogue.quiz.gui.QuizManager;
+import therogue.quiz.gui.WindowManager;
 
 
 /**
@@ -14,12 +16,17 @@ import therogue.quiz.file.ConfigManager;
 public class Main
 {
 	public static ConfigManager theConfigManager;
+	public static WindowManager theWindowManager;
+	public static QuizManager theQuizManager;
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args)
 	{
-		System.out.println("Working");
+		theQuizManager = new QuizManager(theWindowManager);
 		theConfigManager = new ConfigManager();
+		theWindowManager = new WindowManager(theQuizManager);
+		theQuizManager.start();
+		
 	}
 }

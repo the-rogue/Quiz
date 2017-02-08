@@ -1,13 +1,12 @@
 /**
- * This File is Part of Quiz
- * (C) 2017 The Rogue, All Rights Reserved
+ * This File is Part of Quiz (C) 2017 The Rogue, All Rights Reserved
  */
 package therogue.quiz.constants;
 
-import therogue.quiz.constants.category.Category;
-import therogue.quiz.constants.property.PropertyString;
+import java.awt.Color;
 
-
+import therogue.quiz.config.Category;
+import therogue.quiz.config.Property;
 
 /**
  * @author The Rogue
@@ -15,9 +14,13 @@ import therogue.quiz.constants.property.PropertyString;
  */
 public class General
 {
-	private General(){}
+	private General()
+	{
+	}
 	
-	public static final Category GENERAL = new Category("general", "General Settings");
+	public static final Color BACKGROUND_COLOR = new Color(241, 255, 239);
 	
-	public static final PropertyString TITLE = new PropertyString("title", "Quiz", "The title of the Quiz");
+	public static final Category GENERAL = new Category("General", "General Parameters");
+	
+	public static final Property<String> TITLE = new Property<String>("title", "Quiz");
 }

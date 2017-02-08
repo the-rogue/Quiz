@@ -1,0 +1,24 @@
+######################
+#                    #
+#  General Settings  #
+#                    #
+######################
+
+"general" {
+
+  #The title of the Quiz
+  S:title=Quiz
+
+}
+##############################################
+#                                            #
+#  Enter Questions here in the format below  #
+#                                            #
+##############################################
+
+"questions" {
+
+  #A Question
+  S:question=This is a demonstration entry DO NOT EDIT
+
+}
